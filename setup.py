@@ -9,5 +9,6 @@ setup(
     description='Wrapper around mmseqs2',
     packages=["py_mmseqs"],
     package_dir={"": "src"},
+    package_data = {"py_mmseqs": ["**/*.json"]}
     install_requires=[],
 )
