@@ -8,6 +8,6 @@ setup(
     author_email='hirenj@gmail.com',
     description='Wrapper around mmseqs2',
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
-    package_dir={"": "src"},
+    package_dir={"py_mmseqs": "src"},
     install_requires=[],
 )
