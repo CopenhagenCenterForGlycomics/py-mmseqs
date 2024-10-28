@@ -73,7 +73,7 @@ class MMseqs2:
         try:
             # Conveniently, the 'mmseqs version' command is the same for all
             # recent versions of MMseqs2 (maybe all versions?)
-            self.api_version = int(self.version().split(".")[0])
+            self.api_version = int(self.version().split('-')[0].split(".")[0])
         except FileNotFoundError:
             raise FileNotFoundError("MMseqs2 binary not found; please ensure "
                                     "it is installed and in your PATH, or "
