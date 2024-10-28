@@ -7,6 +7,7 @@ setup(
     author='Hiren Joshi',
     author_email='hirenj@gmail.com',
     description='Wrapper around mmseqs2',
-    packages=find_packages(),    
+    packages=find_packages(),
+    package_dir={"py_mmseqs": "src/py_mmseqs"},
     install_requires=[],
 )
